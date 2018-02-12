@@ -7,10 +7,10 @@
 
 #include <vector>
 
-int find_files_naive(int filesize, std::vector<int>& files);
+int find_files_naive(int USBsize, std::vector<int>& files);
 
-int find_files_memoized(int filesize, std::vector<int>& files);
+int find_files_memoized(int USBsize, std::vector<int>& files);
 
-int find_files_dp(int filesize, std::vector<int>& files);
+int find_files_dp(int USBsize, std::vector<int>& files);
 
 #endif
