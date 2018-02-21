@@ -21,7 +21,7 @@ int find_files_naive(int USBsize, std::vector<int>& files) {
     else if (USBsize > *it) {
       // assume per the problem statement that the USB size is always met
       int files_used = find_files_naive(USBsize - *it, files) + 1;
-      if (min == -1 || files_used < min) {
+      if (min == -1 || (files_used < min && files_used > 0)) {
         min = files_used;
       }
     }

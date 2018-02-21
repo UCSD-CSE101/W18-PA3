@@ -36,6 +36,7 @@ if __name__ == '__main__':
    args = vars(parser.parse_args())
    if args["num"] <= 0.0:
       print("Number of rows/cols must be positive")
-   if args["queries"] <= 0:
+   elif args["queries"] <= 0:
       print("Number of queries must be positive.")
-   mat_gen(args)
+   else:
+      mat_gen(args)
